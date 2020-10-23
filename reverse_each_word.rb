@@ -14,7 +14,11 @@ def reverse_each_word (string)
       temp.insert(0, letter)
     end 
   end
+  temp.each_char do |chars|
+    tempArray<<(chars)
+  end
   tempArray.collect do |chars|
     retVal+=chars
   end 
+  return retVal
 end 
