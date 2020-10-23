@@ -10,5 +10,6 @@ def reverse_each_word (string)
     end 
   end 
   retVal<<(temp)
-  return retVal
+  retVal.collect do |chars|
+  end 
 end 
