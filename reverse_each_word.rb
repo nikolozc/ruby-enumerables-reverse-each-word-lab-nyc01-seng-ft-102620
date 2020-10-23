@@ -5,8 +5,9 @@ def reverse_each_word (string)
     if(letter == ' ')
       retVal<<(temp)+" "
       temp = ""
+    else 
+      temp.insert(0, letter)
     end 
-    temp.insert(0, letter)
   end 
   return retVal
 end 
